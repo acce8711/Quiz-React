@@ -2,7 +2,6 @@ import {useState, useEffect} from "react"
 
 export default function QuizQuestion(props)
 {
-    console.log(props.showAnswer)
     var txt = document.createElement("textarea");
     function decode(toDecode)
     {

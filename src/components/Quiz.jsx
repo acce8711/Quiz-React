@@ -39,9 +39,6 @@ export default function Quiz()
         }
         getQuizQuestions()
     }, [playAgain])
-    console.log(quizData)
-
-    console.log(quizData)
 
     function updateForm(event)
     {
@@ -52,7 +49,6 @@ export default function Quiz()
         
     }
 
-    console.log(formData)
 
     const quizQuestions = quizData.map((item, index) => {
         return(<QuizQuestion
@@ -74,7 +70,6 @@ export default function Quiz()
         let correct = 0;
         for(let i=0; i<quizData.length; i++)
         {
-            console.log(formData[i.toString()], quizData[i].correct_answer)
             if(quizData[i].correct_answer.localeCompare(formData[i.toString()]) == 0)
             {
                 correct = correct+1;
@@ -90,7 +85,6 @@ export default function Quiz()
         setPlayAgain(prevValue => !prevValue);
     }
 
-    console.log(correctAnswers)
 
     return(
         <div className="container">
