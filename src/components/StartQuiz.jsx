@@ -7,7 +7,7 @@ export default function StartQuiz(props)
     return(
         <div className="container">
             <h1>QuizIT</h1>
-            <p>Some description if needed</p>
+            <p>Test Your IT Knowledge</p>
             <button onClick={props.startQuiz} className="btn btn-outline">Start quiz</button>
         </div>
     )
